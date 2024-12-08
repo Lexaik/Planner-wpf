@@ -3,19 +3,28 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:system="clr-namespace:System;assembly=System.Runtime"
 
-        Title="ProjectWindow" Height="450" Width="800">
-        <StackPanel Orientation="Vertical">
+        Title="ProjectWindow" Height="600" Width="800"
+       MinWidth="1080" MaxWidth="1920"
+        
+       WindowStartupLocation="CenterScreen"
+       WindowState="Normal" WindowStyle="SingleBorderWindow" ResizeMode="CanResize">
+       
+       <Window.Resources>
+              <ResourceDictionary Source="ProjectWindowStyles.xamlWindowStyles.xaml"/>
+       </Window.Resources>
+       
+       <StackPanel Orientation="Vertical">
         <Grid>
-                <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+               <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="10*"/>
+            
         </Grid.RowDefinitions>
         <Button x:Name="Project"
                 Content="Заказы"
@@ -80,98 +89,92 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
+                        
                 </Grid.RowDefinitions>
-                <Label x:Name="Proj"
-                       Content="№ Заказа/день"/>
-                <Label x:Name="Day1"
-                       Content="1"
+                <TextBlock x:Name="Proj"
+                       Text="№ Заказа/день"/>
+                <TextBlock x:Name="Day1"
+                       Text="1"
                        Grid.Column="1"
                        Grid.Row="0"/>
-                <Label x:Name="Day2"
-                       Content="2"
+                <TextBlock x:Name="Day2"
+                       Text="2"
                        Grid.Column="2"
                        Grid.Row="0"/>
-                <Label x:Name="Day3"
-                       Content="3"
+                <TextBlock x:Name="Day3"
+                       Text="3"
                        Grid.Column="3"
                        Grid.Row="0"/>
-                <Label x:Name="Day4"
-                       Content="4"
+                <TextBlock x:Name="Day4"
+                       Text="4"
                        Grid.Column="4"
                        Grid.Row="0"/>
-                <Label x:Name="Day5"
-                       Content="5"
+                <TextBlock x:Name="Day5"
+                       Text="5"
                        Grid.Column="5"
                        Grid.Row="0"/>
-                <Label x:Name="Day6"
-                       Content="6"
+                <TextBlock x:Name="Day6"
+                       Text="6"
                        Grid.Column="6"
                        Grid.Row="0"/>
-                <Label x:Name="Day7"
-                       Content="7"
+                <TextBlock x:Name="Day7"
+                       Text="7"
                        Grid.Column="7"
                        Grid.Row="0"/>
-                <Label x:Name="Today"
-                       Content="Сегодня"
+                <TextBlock x:Name="Today"
+                       Text="Now"
                        Grid.Column="8"
                        Grid.Row="0"/>
-                <Label x:Name="Day9"
-                       Content="9"
+                <TextBlock x:Name="Day9"
+                       Text="9"
                        Grid.Column="9"
                        Grid.Row="0"/>
-                <Label x:Name="Day10"
-                       Content="10"
+                <TextBlock x:Name="Day10"
+                       Text="10"
                        Grid.Column="10"
                        Grid.Row="0"/>
-                <Label x:Name="Day11"
-                       Content="11"
+                <TextBlock x:Name="Day11"
+                       Text="11"
                        Grid.Column="11"
                        Grid.Row="0"/>
-                <Label x:Name="Day12"
-                       Content="2"
+                <TextBlock x:Name="Day12"
+                       Text="2"
                        Grid.Column="12"
                        Grid.Row="0"/>
-                <Label x:Name="Day13"
-                       Content="13"
+                <TextBlock x:Name="Day13"
+                       Text="13"
                        Grid.Column="13"
                        Grid.Row="0"/>
-                <Label x:Name="Day14"
-                       Content="14"
+                <TextBlock x:Name="Day14"
+                       Text="14"
                        Grid.Column="14"
                        Grid.Row="0"/>
-                <Label x:Name="Day15"
-                       Content="15"
+                <TextBlock x:Name="Day15"
+                       Text="15"
                        Grid.Column="15"
                        Grid.Row="0"/>
-                <Label x:Name="Day16"
-                       Content="16"
+                <TextBlock x:Name="Day16"
+                       Text="16"
                        Grid.Column="16"
                        Grid.Row="0"/>
-                <Label x:Name="Day17"
-                       Content="17"
+                <TextBlock x:Name="Day17"
+                       Text="17"
                        Grid.Column="17"
                        Grid.Row="0"/>
-                <Label x:Name="Day18"
-                       Content="18"
+                <TextBlock x:Name="Day18"
+                       Text="18"
                        Grid.Column="18"
                        Grid.Row="0"/>
-                <Label x:Name="Day19"
-                       Content="19"
+                <TextBlock x:Name="Day19"
+                       Text="19"
                        Grid.Column="19"
                        Grid.Row="0"/>
-                <Label x:Name="Day20"
-                       Content="20"
+                <TextBlock x:Name="Day20"
+                       Text="20"
                        Grid.Column="20"
                        Grid.Row="0"/>
-                <Label x:Name="Day21"
-                       Content="21"
+                <TextBlock x:Name="Day21"
+                       Text="21"
                        Grid.Column="21"
                        Grid.Row="0"/>
         </Grid>
